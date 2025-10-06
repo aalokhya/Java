@@ -1,0 +1,89 @@
+// Java Basics 
+
+public class JavaBasics {
+    public static void main(String[] args) {
+
+        // ---- Variables ----
+        int num = 10;           // Integer number
+        double price = 99.99;   // Decimal number
+        char grade = 'A';       // Single character
+        boolean isTrue = true;  // True or False
+        String name = "Chinni"; // Text/String
+
+        // ---- Printing ----
+        System.out.println("Hello World"); // Print with newline
+        System.out.print("Hello ");        // Print without newline
+
+        // ---- Operators ----
+        int a = 5, b = 3;
+        int sum = a + b;      // Addition
+        int diff = a - b;     // Subtraction
+        int prod = a * b;     // Multiplication
+        int div = a / b;      // Integer division
+        int mod = a % b;      // Remainder
+
+        // ---- Conditional Statements ----
+        if (a > b) {
+            System.out.println("A is greater");
+        } else if (a == b) {
+            System.out.println("A equals B");
+        } else {
+            System.out.println("B is greater");
+        }
+
+        // ---- Switch Case ----
+        int day = 3;
+        switch(day) {
+            case 1: System.out.println("Monday"); break;
+            case 2: System.out.println("Tuesday"); break;
+            default: System.out.println("Other day"); break;
+        }
+
+        // ---- Loops ----
+        // For loop
+        for(int i = 0; i < 5; i++) {
+            System.out.print(i + " "); // 0 1 2 3 4
+        }
+        System.out.println();
+
+        // While loop
+        int x = 0;
+        while(x < 3) {
+            System.out.println(x);
+            x++;
+        }
+
+        // Do-While loop
+        int y = 0;
+        do {
+            System.out.println(y);
+            y++;
+        } while(y < 3);
+
+        // ---- Arrays ----
+        int[] numbers = {1, 2, 3, 4, 5}; // Array of integers
+        System.out.println(numbers[0]);  // First element
+
+        // Loop through array
+        for(int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " "); // 1 2 3 4 5
+        }
+        System.out.println();
+
+        // ---- Strings ----
+        String text = "Java";
+        System.out.println(text.length());      // Length of string
+        System.out.println(text.toUpperCase()); // Convert to uppercase
+        System.out.println(text.charAt(0));    // First character
+        System.out.println(text.substring(1,3));// "av"
+        System.out.println(text.contains("a"));// true if contains
+
+        // ---- Methods / Functions ----
+        int result = add(5, 3); // Call method
+        System.out.println(result); // 8
+
+    // ---- Simple Method Example ----
+    static int add(int a, int b) {
+        return a + b; // Return sum
+    }
+}
